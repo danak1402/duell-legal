@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Oswald:wght@700&display=swap');
+:root{--desk:#D9D3C5;--paper:#FBFAF6;--ink:#1E1B16;--mute:#5E584D}
+*{box-sizing:border-box}
+body{margin:0;background:var(--desk);color:var(--ink);font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px;line-height:1.6}
+main{max-width:640px;margin:0 auto;padding:32px 16px 48px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.brand{font-family:Oswald,sans-serif;font-weight:700;font-size:26px;letter-spacing:.12em;color:var(--ink);text-decoration:none}
+nav a{color:var(--ink);font-size:13px;margin-left:16px}
+.ticket{background:var(--paper);padding:28px 24px;position:relative;margin-bottom:12px}
+.ticket::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:8px;background:linear-gradient(135deg,var(--paper) 4px,transparent 0) 0 0/8px 8px repeat-x,linear-gradient(-135deg,var(--paper) 4px,transparent 0) 0 0/8px 8px repeat-x}
+.small{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+h1{font-family:Oswald,sans-serif;font-weight:700;font-size:40px;line-height:1.05;text-transform:uppercase;margin:12px 0 8px}
+h2{font-family:Oswald,sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;margin:28px 0 6px;letter-spacing:.03em}
+.cut{border-top:2px dashed var(--ink);margin:20px 0}
+a{color:var(--ink)}
+p,li{margin:0 0 10px}
+.mute{color:var(--mute)}
+.barcode{height:30px;margin-top:24px;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 4px,var(--ink) 4px 7px,transparent 7px 9px,var(--ink) 9px 10px,transparent 10px 13px)}
